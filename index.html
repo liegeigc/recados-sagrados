@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Código do Amor Divino — Recados Sagrados</title>
+<meta name="description" content="Para a mulher cristã que está cansada de esperar o amor verdadeiro que parece nunca chegar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-deep:#110827;
+    --bg-soft:#15092d;
+    --bg-card:#1a0e3e;
+    --bg-card-alt:#1f1245;
+    --bg-card-glow:#241551;
+    --gold:#c9a24b;
+    --gold-bright:#e3bb6b;
+    --gold-soft:#d6b164;
+    --gold-dim:#8a6f30;
+    --cream:#e8e5d8;
+    --cream-dim:#b8b3a3;
+    --cream-low:#807a6a;
+    --lavender:#a89bbf;
+    --lavender-bright:#c5b8d6;
+    --lavender-dim:#7a6f93;
+    --line:rgba(168,155,191,0.16);
+    --line-strong:rgba(168,155,191,0.28);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Cormorant Garamond",Georgia,serif;
+    background:var(--bg-deep);
+    color:var(--cream);
+    line-height:1.75;
+    font-size:19px;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    position:relative;
+    overflow-x:hidden;
+  }
+
+  /* ========================================================
+     STARFIELD — twinkle animation (gerado por JS)
+  ======================================================== */
+  .stars{
+    position:fixed;inset:0;
+    pointer-events:none;
+    z-index:0;
+    overflow:hidden;
+  }
+  .star{
+    position:absolute;
+    display:block;
+    border-radius:50%;
+    animation-name:twinkle;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in-out;
+    will-change:opacity,transform;
+  }
+  @keyframes twinkle{
+    0%,100%{opacity:.12;transform:scale(0.7)}
+    50%{opacity:1;transform:scale(1.15)}
+  }
+  body > *{position:relative;z-index:1}
+
+  /* ========================================================
+     HERO
+  ======================================================== */
+  .hero{
+    padding:90px 28px 50px;
+    text-align:center;
+    min-height:90vh;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+  }
+  .hero-eyebrow{
+    font-family:"Cinzel",serif;
+    font-size:11px;letter-spacing:6px;text-transform:uppercase;
+    color:var(--lavender);font-weight:400;
+    margin-bottom:46px;
+  }
+  .hero h1{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-weight:400;
+    font-size:54px;color:var(--gold);
+    line-height:1.18;max-width:760px;
+    margin-bottom:40px;letter-spacing:.3px;
+  }
+  .hero-sub{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-weight:400;
+    font-size:21px;color:var(--cream-dim);
+    max-width:620px;margin:0 auto 56px;
+    line-height:1.65;
+  }
+  .hero-sub b{color:var(--cream);font-weight:500;font-style:italic}
+  .hero-sub em{color:var(--lavender-bright);font-style:italic}
+
+  .hero-meta{
+    margin-top:14px;padding-top:28px;
+    border-top:1px solid var(--line);
+    max-width:520px;width:100%;
+    font-family:"Cinzel",serif;
+    font-size:11px;letter-spacing:4px;text-transform:uppercase;
+    color:var(--cream-low);
+  }
+  .hero-meta .dot{color:var(--gold);margin:0 10px}
+
+  /* ========================================================
+     BLOCK BASE
+  ======================================================== */
+  section.block{padding:56px 28px}
+  .block-inner{max-width:760px;margin:0 auto;text-align:center}
+  .eyebrow.block-eyebrow{
+    text-align:center;margin-bottom:24px;
+    font-family:"Cinzel",serif;
+    font-size:11px;letter-spacing:5px;text-transform:uppercase;
+    color:var(--lavender);font-weight:500;
+  }
+  .section-h{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-weight:400;
+    font-size:38px;color:var(--gold);
+    line-height:1.25;max-width:680px;margin:0 auto 36px;letter-spacing:.3px;
+  }
+  .section-h em{color:var(--gold-bright);font-style:italic;font-weight:500}
+  .section-h.cream{color:var(--cream)}
+
+  /* ========================================================
+     BLOCO 2 — DOR PROFUNDA
+  ======================================================== */
+  .block.dor{padding-top:20px}
+  .dor .ask{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-size:21px;
+    color:var(--cream-dim);
+    text-align:center;margin-bottom:56px;
+    max-width:580px;margin-left:auto;margin-right:auto;line-height:1.65;
+  }
+  .dor-text{
+    text-align:left;max-width:600px;margin:0 auto;
+    font-size:19px;color:var(--cream-dim);line-height:1.85;
+  }
+  .dor-text p{margin-bottom:22px}
+  .dor-text p b{color:var(--cream);font-weight:500}
+  .dor-text p i,.dor-text p em{color:var(--lavender-bright);font-style:italic}
+  .dor-quote{
+    margin:48px auto;
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-size:28px;
+    color:var(--lavender-bright);
+    text-align:center;max-width:460px;line-height:1.4;
+  }
+  .dor-close{
+    max-width:560px;margin:48px auto 0;text-align:center;
+  }
+  .dor-close p{
+    font-size:18px;color:var(--cream-dim);
+    margin-bottom:14px;line-height:1.7;font-style:italic;
+  }
+  .dor-close strong{
+    display:block;margin-top:24px;
+    color:var(--cream);font-style:italic;font-weight:500;
+    font-size:20px;line-height:1.5;
+  }
+  .dor-close strong + strong{color:var(--gold);margin-top:6px}
+
+  /* ========================================================
+     TEASER VISUAL
+  ======================================================== */
+  .teaser-visual{padding:40px 28px 80px;text-align:center}
+  .teaser-img{
+    max-width:780px;margin:0 auto;
+    aspect-ratio:16/9;
+    background-image:url('img/02-teaser-mockup.jpg');
+    background-size:contain;background-position:center;background-repeat:no-repeat;
+    background-color:transparent;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .teaser-img.placeholder::before{
+    content:"[ Mockup do livro O Código do Amor Divino em celular, tablet e versão impressa ]";
+    color:var(--cream-low);font-size:13px;font-style:italic;
+    border:1px solid var(--line);
+    padding:50px 40px;background:rgba(168,155,191,0.04);
+    text-align:center;line-height:1.6;border-radius:4px;
+  }
+
+  /* ========================================================
+     BLOCO 3 — MECANISMO
+  ======================================================== */
+  .mec{padding:56px 28px}
+  .mec .impact-card{
+    max-width:680px;margin:0 auto 50px;
+    background:linear-gradient(180deg,var(--bg-card) 0%,var(--bg-soft) 100%);
+    border:1px solid var(--line);
+    padding:48px 42px;text-align:center;
+  }
+  .mec .impact-card p{
+    font-size:19px;color:var(--cream-dim);line-height:1.75;
+    margin-bottom:18px;font-style:italic;
+  }
+  .mec .impact-card p:last-child{margin-bottom:0}
+  .mec .impact-card p b{color:var(--cream);font-weight:500;font-style:italic}
+  .mec .impact-card p em{color:var(--lavender-bright);font-style:italic}
+  .mec .impact-card p.impact-final{
+    margin-top:28px;font-style:normal;
+    font-family:"Cinzel",serif;font-weight:500;
+    font-size:26px;color:var(--gold-bright);letter-spacing:2px;text-transform:uppercase;
+    text-shadow:0 0 24px rgba(201,162,75,0.25);
+  }
+  .mec .impact-card p.impact-final .big-seven{
+    font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:600;
+    font-size:52px;color:var(--gold-bright);letter-spacing:0;
+    margin:0 6px;vertical-align:-8px;
+    text-shadow:0 0 30px rgba(201,162,75,0.4);
+  }
+  .mec-bridge{
+    text-align:center;
+    font-size:20px;color:var(--cream);font-style:italic;
+    margin:0 auto 60px;max-width:580px;line-height:1.65;
+  }
+  .mec-bridge b{color:var(--gold);font-weight:500}
+
+  .sinais{
+    max-width:760px;margin:0 auto 60px;
+    display:flex;flex-direction:column;gap:22px;
+  }
+  .sinal-card{
+    background:linear-gradient(180deg,var(--bg-card) 0%,var(--bg-soft) 100%);
+    border:1px solid var(--line);
+    padding:34px 36px;text-align:left;
+  }
+  .sinal-num-label{
+    font-family:"Cinzel",serif;
+    font-size:11px;letter-spacing:4px;text-transform:uppercase;
+    color:var(--lavender);font-weight:500;margin-bottom:10px;
+  }
+  .sinal-title{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-weight:500;
+    font-size:26px;color:var(--gold);
+    margin-bottom:14px;line-height:1.3;
+  }
+  .sinal-body{
+    font-size:18px;color:var(--cream-dim);line-height:1.7;margin-bottom:14px;
+  }
+  .sinal-body b{color:var(--cream);font-weight:500}
+  .sinal-ref{
+    font-size:14px;font-style:italic;
+    color:var(--lavender);letter-spacing:.5px;
+  }
+  .sinal-ref::before{content:"— ";color:var(--gold-dim)}
+
+  .reveal-rest{
+    max-width:680px;margin:30px auto 0;text-align:center;padding:48px 28px;
+    background:linear-gradient(135deg,rgba(201,162,75,0.06) 0%,rgba(168,155,191,0.04) 100%);
+    border:1px solid var(--line-strong);
+    border-radius:3px;
+  }
+  .reveal-rest .num{
+    font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;
+    font-size:84px;color:var(--gold-bright);line-height:1;margin-bottom:18px;
+    text-shadow:0 0 30px rgba(201,162,75,0.3);
+  }
+  .reveal-rest p{
+    font-size:22px;font-style:italic;color:var(--cream);line-height:1.6;
+    max-width:560px;margin:0 auto;
+  }
+  .reveal-rest p b{color:var(--gold-bright);font-weight:600;font-style:italic}
+  .reveal-rest p strong{color:var(--gold-bright);font-weight:600;font-style:italic}
+
+  /* ========================================================
+     STRIP DIVIDER
+  ======================================================== */
+  .strip-divider{
+    text-align:center;padding:30px 28px;
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    background:rgba(168,155,191,0.04);
+  }
+  .strip-divider p{
+    font-family:"Cinzel",serif;
+    font-size:11px;letter-spacing:4px;text-transform:uppercase;
+    color:var(--lavender);font-weight:500;line-height:1.6;
+  }
+  .strip-divider p .dot{color:var(--gold);margin:0 12px}
+  .strip-divider p strong{color:var(--gold-bright);font-weight:600;letter-spacing:5px}
+
+  /* ========================================================
+     BLOCO 4 — PRODUTO + PRIMEIRO CTA
+  ======================================================== */
+  .produto{padding:56px 28px}
+  .produto-card{
+    max-width:780px;margin:0 auto;
+    background:linear-gradient(180deg,var(--bg-card-glow) 0%,var(--bg-card) 100%);
+    border:1px solid var(--line-strong);
+    padding:60px 50px;text-align:center;
+  }
+  .produto-intro{
+    font-family:"Cinzel",serif;
+    font-size:11px;letter-spacing:5px;text-transform:uppercase;
+    color:var(--lavender);margin-bottom:20px;font-weight:500;
+  }
+  .produto-h{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-weight:400;
+    font-size:46px;color:var(--gold);
+    line-height:1.18;margin-bottom:22px;letter-spacing:.3px;
+  }
+  .produto-subh{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-weight:400;
+    font-size:19px;color:var(--lavender-bright);
+    margin-bottom:32px;line-height:1.5;
+  }
+  .produto-desc{
+    font-size:18px;color:var(--cream-dim);line-height:1.8;
+    max-width:600px;margin:0 auto 36px;
+  }
+  .produto-desc b{color:var(--cream);font-weight:500}
+  .what-inside{
+    font-family:"Cinzel",serif;
+    font-size:10px;letter-spacing:4px;text-transform:uppercase;
+    color:var(--lavender);margin:36px 0 24px;font-weight:500;
+  }
+  .capitulos{
+    max-width:640px;margin:0 auto 40px;
+    display:flex;flex-direction:column;gap:14px;text-align:left;
+  }
+  .cap-item{
+    padding:18px 22px;background:rgba(168,155,191,0.04);
+    border:1px solid var(--line);border-radius:3px;
+  }
+  .cap-num{
+    font-family:"Cinzel",serif;
+    font-size:10px;letter-spacing:3px;text-transform:uppercase;
+    color:var(--lavender);margin-bottom:5px;font-weight:500;
+  }
+  .cap-title{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-weight:500;
+    font-size:20px;color:var(--gold);line-height:1.35;
+  }
+
+  /* ========================================================
+     CTA
+  ======================================================== */
+  .cta-wrap{text-align:center;margin-top:32px}
+  .cta-btn{
+    display:inline-block;
+    background:linear-gradient(180deg,var(--gold-bright) 0%,var(--gold) 100%);
+    color:var(--bg-deep);
+    font-family:"Cinzel",serif;font-weight:600;
+    font-size:14px;letter-spacing:3.5px;text-transform:uppercase;
+    padding:22px 42px;
+    border:1px solid var(--gold);border-radius:2px;
+    cursor:pointer;text-decoration:none;
+    box-shadow:0 6px 24px rgba(201,162,75,0.25);
+    transition:transform .15s,box-shadow .15s;line-height:1.2;
+  }
+  .cta-btn:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(201,162,75,0.4)}
+  .cta-btn-soft{
+    background:transparent;
+    color:var(--gold-bright);
+    border:1px solid var(--gold);
+    box-shadow:none;
+  }
+  .cta-btn-soft:hover{
+    background:rgba(201,162,75,0.08);
+    box-shadow:0 4px 18px rgba(201,162,75,0.18);
+  }
+  .cta-sub{
+    margin-top:16px;
+    font-family:"Cinzel",serif;
+    font-size:10px;letter-spacing:2.5px;text-transform:uppercase;
+    color:var(--cream-low);
+  }
+  .cta-sub span{color:var(--gold);margin:0 8px}
+
+  /* ========================================================
+     BLOCO 5 — BÔNUS
+  ======================================================== */
+  .bonus{padding:56px 28px}
+  .bonus-intro{text-align:center;margin-bottom:50px}
+  .bonus-title-num{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-weight:400;
+    font-size:44px;color:var(--gold);
+    line-height:1.18;margin-bottom:16px;
+  }
+  .bonus-title-num em{color:var(--gold-bright);font-style:italic;font-weight:500}
+  .bonus-subline{
+    font-style:italic;color:var(--cream-dim);
+    font-size:18px;max-width:540px;margin:0 auto;line-height:1.7;
+  }
+  .bonus-grid{
+    max-width:780px;margin:0 auto;
+    display:flex;flex-direction:column;gap:18px;
+  }
+  .bonus-card{
+    background:linear-gradient(180deg,var(--bg-card) 0%,var(--bg-soft) 100%);
+    border:1px solid var(--line);
+    padding:30px 32px;
+    display:flex;gap:26px;align-items:center;
+    transition:border-color .25s;
+  }
+  .bonus-card:hover{border-color:var(--line-strong)}
+  .bonus-num-block{
+    flex-shrink:0;
+    font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;
+    font-size:42px;color:var(--gold);
+    line-height:1;letter-spacing:1px;
+    width:60px;text-align:center;opacity:.9;
+  }
+  .bonus-cover-thumb{
+    position:relative;flex-shrink:0;
+    width:104px;height:148px;
+    background:linear-gradient(180deg,var(--bg-card-alt) 0%,var(--bg-soft) 100%);
+    border:1px solid var(--line-strong);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 18px rgba(0,0,0,0.5);
+    overflow:hidden;
+  }
+  .bonus-cover-thumb::before{
+    content:attr(data-num);
+    position:absolute;inset:0;
+    display:flex;align-items:center;justify-content:center;
+    font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;
+    font-size:52px;color:var(--gold);
+    z-index:0;
+  }
+  .bonus-cover-thumb img{
+    position:relative;z-index:1;
+    width:100%;height:100%;object-fit:cover;
+    display:block;
+  }
+  .bonus-content{flex:1;min-width:0;text-align:left}
+  .bonus-card-title{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-weight:500;
+    font-size:22px;color:var(--gold);
+    margin-bottom:8px;line-height:1.3;
+  }
+  .bonus-card-promise{
+    font-size:16px;color:var(--cream-dim);line-height:1.65;font-style:italic;
+  }
+  .bonus-card-promise b{color:var(--cream);font-weight:500;font-style:italic}
+  .bonus-card-value{
+    margin-top:10px;
+    font-family:"Cinzel",serif;
+    font-size:10px;letter-spacing:2px;text-transform:uppercase;
+    color:var(--lavender);
+  }
+  .bonus-card-value span{color:var(--gold-bright)}
+  .bonus-total{
+    max-width:600px;margin:50px auto 0;text-align:center;
+    padding-top:30px;border-top:1px solid var(--line);
+  }
+  .bonus-total p{
+    font-family:"Cormorant Garamond",serif;
+    font-size:19px;color:var(--cream);font-style:italic;
+  }
+  .bonus-total p strong{color:var(--gold);font-weight:500}
+  .bonus-total-highlight{
+    display:inline-block;
+    margin-top:18px;padding:14px 26px;
+    background:linear-gradient(135deg,rgba(201,162,75,0.10) 0%,rgba(201,162,75,0.04) 100%);
+    border:1px solid var(--gold);
+    border-radius:3px;
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-size:19px;
+    color:var(--cream);line-height:1.5;
+  }
+  .bonus-total-highlight strong{
+    color:var(--gold-bright);font-weight:600;font-style:normal;
+  }
+
+  /* ========================================================
+     CAMINHO 90 DIAS
+  ======================================================== */
+  .caminho-block{padding:30px 28px 56px}
+  .caminho-card{
+    max-width:760px;margin:0 auto;
+    background:linear-gradient(180deg,var(--bg-card-glow) 0%,var(--bg-card) 100%);
+    border:1px solid var(--line-strong);
+    padding:60px 48px;text-align:center;
+  }
+  .caminho-badge{
+    display:inline-block;
+    font-family:"Cinzel",serif;
+    font-size:10px;letter-spacing:4px;text-transform:uppercase;
+    color:var(--lavender);
+    border:1px solid var(--lavender-dim);padding:7px 16px;
+    border-radius:2px;margin-bottom:30px;
+  }
+  .caminho-num{
+    font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;
+    font-size:78px;color:var(--gold);
+    letter-spacing:2px;line-height:1;margin-bottom:8px;
+  }
+  .caminho-num-sub{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-size:16px;
+    color:var(--lavender);margin-bottom:28px;letter-spacing:1px;
+  }
+  .caminho-h{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-weight:400;
+    font-size:32px;color:var(--gold);
+    line-height:1.3;margin-bottom:22px;
+  }
+  .caminho-desc{
+    font-size:18px;color:var(--cream-dim);
+    line-height:1.8;max-width:580px;margin:0 auto;
+  }
+  .caminho-desc b{color:var(--cream);font-weight:500}
+
+  .caminho-slim{
+    max-width:680px;margin:34px auto 0;
+    padding:20px 28px;
+    background:linear-gradient(135deg,rgba(201,162,75,0.06) 0%,rgba(168,155,191,0.04) 100%);
+    border:1px solid var(--line-strong);
+    display:flex;align-items:center;justify-content:center;gap:18px;
+    text-align:center;flex-wrap:wrap;
+  }
+  .caminho-slim-num{
+    font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;
+    font-size:30px;color:var(--gold-bright);
+    line-height:1;flex-shrink:0;
+  }
+  .caminho-slim-text{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-size:17px;
+    color:var(--cream-dim);line-height:1.5;
+  }
+  .caminho-slim-text strong{color:var(--cream);font-weight:500;font-style:normal}
+  @media (max-width:720px){
+    .caminho-slim{flex-direction:column;gap:8px;padding:18px 22px}
+    .caminho-slim-num{font-size:26px}
+    .caminho-slim-text{font-size:15px}
+  }
+
+  /* ========================================================
+     WHISPER (gatilho de curiosidade)
+  ======================================================== */
+  .whisper{
+    padding:60px 28px 50px;text-align:center;
+  }
+  .whisper p{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-size:26px;line-height:1.5;
+    color:var(--gold-soft);
+    max-width:720px;margin:0 auto;letter-spacing:.5px;
+  }
+  @media (max-width:720px){
+    .whisper{padding:50px 22px}
+    .whisper p{font-size:20px}
+  }
+
+  /* ========================================================
+     BLOCO 6 — OFERTA
+  ======================================================== */
+  .offer{
+    padding:40px 28px 56px;
+    background:linear-gradient(180deg,var(--bg-deep) 0%,var(--bg-soft) 100%);
+  }
+  .offer-eyebrow{
+    text-align:center;margin-bottom:14px;
+    font-family:"Cinzel",serif;
+    font-size:11px;letter-spacing:5px;text-transform:uppercase;
+    color:var(--lavender);font-weight:500;
+  }
+  .offer-h{
+    text-align:center;
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-weight:400;
+    font-size:38px;color:var(--gold);
+    line-height:1.25;max-width:560px;margin:0 auto 40px;
+  }
+  .countdown-strip{
+    max-width:680px;margin:32px auto 0;
+    text-align:center;padding:20px 28px;
+    background:linear-gradient(180deg,rgba(168,155,191,0.06) 0%,rgba(168,155,191,0.02) 100%);
+    border:1px solid var(--line-strong);
+  }
+  .countdown-label{
+    font-family:"Cinzel",serif;
+    font-size:10px;letter-spacing:4px;text-transform:uppercase;
+    color:var(--lavender);margin-bottom:8px;font-weight:500;
+  }
+  .countdown-clock{
+    font-family:"Cinzel",serif;font-weight:500;
+    font-size:30px;color:var(--gold-bright);
+    letter-spacing:6px;line-height:1;margin-bottom:6px;
+  }
+  .countdown-after{
+    font-family:"Cormorant Garamond",serif;
+    font-size:14px;font-style:italic;color:var(--cream-dim);
+    letter-spacing:.5px;
+  }
+  .countdown-after b{color:var(--gold);font-weight:500;font-style:normal}
+
+  .offer-box{
+    max-width:680px;margin:0 auto;
+    background:linear-gradient(180deg,var(--bg-card-glow) 0%,var(--bg-card) 100%);
+    border:1px solid var(--gold-dim);
+    padding:54px 44px 48px;
+    text-align:center;position:relative;
+  }
+  .offer-special{
+    font-family:"Cinzel",serif;
+    font-size:10px;letter-spacing:4px;text-transform:uppercase;
+    color:var(--gold-bright);margin-bottom:24px;font-weight:500;
+  }
+  .offer-special::before,.offer-special::after{
+    content:"✦";color:var(--gold);margin:0 10px;
+  }
+  .offer-title{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-weight:400;
+    font-size:28px;color:var(--gold);
+    line-height:1.3;margin-bottom:32px;
+  }
+  .offer-stack{
+    list-style:none;text-align:left;
+    max-width:480px;margin:0 auto 28px;
+  }
+  .offer-stack li{
+    padding:11px 0;
+    font-size:16px;color:var(--cream);line-height:1.5;font-style:italic;
+    display:flex;justify-content:space-between;gap:14px;
+  }
+  .offer-stack li::before{
+    content:"+ ";color:var(--gold);margin-right:6px;font-style:normal;
+  }
+  .offer-stack li.bonus-line{padding:6px 0;font-size:15px;color:var(--cream-dim)}
+  .offer-stack li .val{
+    color:var(--lavender);font-size:14px;font-style:italic;flex-shrink:0;
+    letter-spacing:.3px;white-space:nowrap;
+  }
+  .offer-divider{
+    height:1px;background:var(--line);
+    margin:18px auto;max-width:480px;
+  }
+  .offer-total{
+    max-width:480px;margin:0 auto 24px;
+    text-align:right;
+    font-family:"Cinzel",serif;
+    font-size:11px;letter-spacing:3px;text-transform:uppercase;
+    color:var(--cream-dim);
+  }
+  .offer-total .val{
+    font-size:16px;color:var(--cream);
+    text-decoration:line-through;margin-left:8px;letter-spacing:1px;
+  }
+  .offer-price-label{
+    font-family:"Cinzel",serif;
+    font-size:11px;letter-spacing:4px;text-transform:uppercase;
+    color:var(--lavender);font-weight:500;margin-bottom:12px;
+  }
+  .offer-price-big{
+    font-family:"Cinzel",serif;font-weight:500;
+    font-size:78px;color:var(--gold-bright);
+    line-height:1;letter-spacing:1px;margin-bottom:10px;
+    text-shadow:0 0 30px rgba(201,162,75,0.2);
+  }
+  .offer-price-big small{
+    font-size:28px;color:var(--gold);font-weight:400;
+    vertical-align:top;margin-right:6px;
+  }
+  .offer-price-big .cents{
+    font-size:32px;color:var(--gold);font-weight:400;
+    margin-left:4px;
+  }
+  .offer-price-sub{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-size:15px;
+    color:var(--cream-dim);margin-bottom:34px;letter-spacing:.5px;
+  }
+  .offer-secure{
+    margin-top:18px;
+    font-family:"Cinzel",serif;
+    font-size:10px;letter-spacing:2.5px;text-transform:uppercase;
+    color:var(--cream-low);
+  }
+  .offer-secure span{color:var(--gold);margin:0 8px}
+
+  /* ========================================================
+     CTA REFORÇO
+  ======================================================== */
+  .cta-reforco{padding:40px 28px 48px;text-align:center}
+  .cta-reforco p{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-size:22px;color:var(--lavender-bright);
+    max-width:580px;margin:0 auto 30px;line-height:1.65;
+  }
+
+  /* ========================================================
+     TESTIMONIALS
+  ======================================================== */
+  .testi{padding:56px 28px}
+  .testi-grid{
+    max-width:760px;margin:0 auto;
+    display:flex;flex-direction:column;gap:24px;
+  }
+  .testi-card{
+    background:linear-gradient(180deg,var(--bg-card) 0%,var(--bg-soft) 100%);
+    border:1px solid var(--line);
+    padding:36px 38px;position:relative;
+  }
+  .testi-card::before{
+    content:"\201C";
+    font-family:"Cormorant Garamond",serif;
+    position:absolute;top:18px;left:20px;
+    color:var(--gold);font-size:42px;line-height:1;opacity:.5;
+  }
+  .testi-body{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-size:19px;
+    color:var(--cream);line-height:1.7;
+    margin-bottom:24px;padding-top:16px;
+  }
+  .testi-body b{color:var(--gold);font-weight:500}
+  .testi-meta{
+    display:flex;align-items:center;gap:14px;
+    padding-top:18px;border-top:1px solid var(--line);
+  }
+  .testi-avatar{
+    width:52px;height:52px;flex-shrink:0;
+    border-radius:50%;
+    background:rgba(168,155,191,0.08);
+    border:1px solid var(--lavender-dim);
+    overflow:hidden;position:relative;
+    display:flex;align-items:center;justify-content:center;
+    font-family:"Cinzel",serif;font-weight:500;
+    font-size:14px;color:var(--gold);
+  }
+  .testi-avatar img{
+    position:absolute;inset:0;
+    width:100%;height:100%;
+    object-fit:cover;
+    object-position:center 22%;
+    display:block;
+  }
+  .testi-info{flex:1}
+  .testi-name{
+    font-family:"Cinzel",serif;
+    font-size:12px;color:var(--cream);letter-spacing:2px;
+    font-weight:500;text-transform:uppercase;
+  }
+  .testi-where{
+    font-family:"Cormorant Garamond",serif;
+    font-size:14px;color:var(--cream-low);
+    font-style:italic;margin-top:2px;
+  }
+  .testi-stars{color:var(--gold);letter-spacing:2px;font-size:14px;margin-top:4px}
+
+  /* ========================================================
+     SEAL DIVIDER
+  ======================================================== */
+  .seal-divider{text-align:center;padding:40px 28px 48px}
+  .seal-img-wrap{margin:0 auto 32px;display:flex;justify-content:center}
+  .seal-custom{
+    width:100%;max-width:720px;height:auto;
+    filter:drop-shadow(0 8px 40px rgba(201,162,75,0.28));
+    border-radius:6px;
+  }
+  .seal-placeholder{
+    display:none;
+    max-width:280px;padding:32px 24px;
+    border:1px dashed var(--line-strong);border-radius:4px;
+    font-size:12px;font-style:italic;color:var(--cream-low);
+    text-align:center;line-height:1.6;
+    background:rgba(168,155,191,0.04);
+  }
+  .seal-phrase{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-size:24px;
+    color:var(--lavender-bright);
+    max-width:520px;margin:0 auto;line-height:1.5;letter-spacing:.5px;
+  }
+
+  /* ========================================================
+     GARANTIA
+  ======================================================== */
+  .garantia{padding:40px 28px 56px}
+  .garantia-card{
+    max-width:640px;margin:0 auto;
+    background:linear-gradient(180deg,var(--bg-card) 0%,var(--bg-soft) 100%);
+    border:1px solid var(--line);
+    padding:54px 46px;text-align:center;border-radius:4px;
+  }
+  .garantia-shield{width:60px;height:60px;margin:0 auto 24px;color:var(--gold)}
+  .garantia-shield svg{width:100%;height:100%}
+  .garantia-eyebrow{
+    font-family:"Cinzel",serif;
+    font-size:11px;letter-spacing:4px;text-transform:uppercase;
+    color:var(--lavender);margin-bottom:18px;font-weight:500;
+  }
+  .garantia-h{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-weight:400;
+    font-size:28px;color:var(--gold);
+    line-height:1.3;margin-bottom:20px;
+  }
+  .garantia-p{
+    font-size:17px;color:var(--cream-dim);line-height:1.75;
+    max-width:520px;margin:0 auto;
+  }
+  .garantia-p strong{color:var(--cream);font-weight:500}
+  .garantia-final{
+    margin-top:22px;
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-size:18px;
+    color:var(--gold);letter-spacing:.5px;
+  }
+
+  /* ========================================================
+     FAQ
+  ======================================================== */
+  .faq-block{padding:56px 28px}
+  .faq-list{
+    max-width:720px;margin:0 auto;
+    display:flex;flex-direction:column;gap:14px;
+  }
+  .faq-item{
+    background:linear-gradient(180deg,var(--bg-card) 0%,var(--bg-soft) 100%);
+    border:1px solid var(--line);border-radius:3px;
+  }
+  .faq-q{
+    width:100%;background:none;border:none;text-align:left;cursor:pointer;
+    padding:24px 26px;
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-weight:500;
+    font-size:19px;color:var(--gold);
+    display:flex;justify-content:space-between;align-items:center;gap:18px;
+    transition:color .2s;line-height:1.4;
+  }
+  .faq-q:hover{color:var(--gold-bright)}
+  .faq-icon{
+    color:var(--lavender);font-size:22px;flex-shrink:0;
+    transition:transform .25s;line-height:1;font-weight:300;
+  }
+  .faq-item.open .faq-icon{transform:rotate(45deg);color:var(--gold)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+  .faq-a p{padding:0 26px;font-size:18px;color:var(--cream-dim);line-height:1.75}
+  .faq-item.open .faq-a{max-height:600px}
+  .faq-item.open .faq-a p{padding-bottom:24px}
+
+  /* ========================================================
+     FINAL CTA
+  ======================================================== */
+  .final{padding:64px 28px;text-align:center}
+  .final-eyebrow{
+    font-family:"Cinzel",serif;
+    font-size:11px;letter-spacing:5px;text-transform:uppercase;
+    color:var(--lavender);font-weight:500;margin-bottom:24px;
+  }
+  .final-h{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-weight:400;
+    font-size:42px;color:var(--gold);
+    line-height:1.2;max-width:680px;margin:0 auto 36px;letter-spacing:.3px;
+  }
+  .final-heart{
+    width:200px;height:auto;margin:0 auto 18px;
+    filter:drop-shadow(0 0 40px rgba(201,162,75,0.4));
+  }
+  .final-heart svg{width:100%;height:100%}
+  .final-heart img{
+    width:100%;height:auto;display:block;
+  }
+
+  /* ========================================================
+     HEART DIVIDER (entre hero e dor)
+  ======================================================== */
+  .heart-divider{
+    text-align:center;padding:6px 28px 10px;margin-top:-30px;
+  }
+  .heart-divider-img{
+    width:200px;height:auto;display:inline-block;
+    filter:drop-shadow(0 0 40px rgba(201,162,75,0.4));
+  }
+  .final-text{
+    max-width:540px;margin:0 auto 38px;
+    font-size:19px;color:var(--cream-dim);line-height:1.85;font-style:italic;
+  }
+  .final-text p{margin-bottom:14px}
+  .final-text p strong{color:var(--cream);font-weight:500;font-style:italic}
+  .final-tag{
+    margin-top:36px;
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-size:18px;
+    color:var(--lavender-bright);max-width:480px;
+    margin-left:auto;margin-right:auto;line-height:1.6;
+  }
+  .final-tag p:first-child{color:var(--gold)}
+
+  /* ========================================================
+     FOOTER
+  ======================================================== */
+  footer{
+    background:#06061a;color:var(--cream-low);
+    text-align:center;padding:50px 28px 36px;
+    font-size:13px;letter-spacing:2px;border-top:1px solid var(--line);
+  }
+  footer .ft-mark{
+    font-family:"Cinzel",serif;
+    font-size:14px;letter-spacing:6px;text-transform:uppercase;
+    color:var(--gold);margin-bottom:18px;font-weight:500;
+  }
+  footer .ft-line{
+    width:80px;height:1px;background:var(--gold-dim);margin:0 auto 22px;
+  }
+  footer p{
+    margin-bottom:8px;line-height:1.8;
+    font-family:"Cormorant Garamond",serif;font-style:italic;font-size:14px;letter-spacing:.5px;
+  }
+  footer a{color:var(--lavender-bright);text-decoration:none}
+  footer a:hover{color:var(--gold)}
+  footer .disclaimer{
+    margin-top:22px;font-size:12px;opacity:.7;
+    max-width:480px;margin-left:auto;margin-right:auto;
+  }
+
+  /* ========================================================
+     RESPONSIVE
+  ======================================================== */
+  @media (max-width:720px){
+    body{font-size:17px}
+    .hero{padding:70px 22px 80px;min-height:auto}
+    .hero h1{font-size:32px}
+    .hero-sub{font-size:18px}
+    section.block{padding:70px 22px}
+    .section-h{font-size:28px}
+    .dor-text{font-size:17px}
+    .dor-quote{font-size:24px}
+    .dor-close p{font-size:17px}
+    .mec .impact-card{padding:36px 26px}
+    .mec .impact-card p{font-size:17px}
+    .mec-bridge{font-size:17px}
+    .sinal-card{padding:26px 24px}
+    .sinal-title{font-size:22px}
+    .sinal-body{font-size:16px}
+    .reveal-rest .num{font-size:44px}
+    .reveal-rest p{font-size:16px}
+    .produto-card{padding:42px 28px}
+    .produto-h{font-size:30px}
+    .produto-subh{font-size:17px}
+    .produto-desc{font-size:16px}
+    .cap-title{font-size:18px}
+    .cta-btn{font-size:12px;padding:18px 24px;letter-spacing:2.5px;width:100%;max-width:340px}
+    .bonus-card{flex-direction:column;gap:14px;text-align:center;padding:26px 22px}
+    .bonus-num-block{font-size:34px;width:auto}
+    .bonus-content{text-align:center}
+    .bonus-title-num{font-size:30px}
+    .caminho-card{padding:42px 26px}
+    .caminho-num{font-size:60px}
+    .caminho-h{font-size:24px}
+    .caminho-desc{font-size:16px}
+    .offer-h{font-size:28px}
+    .countdown-clock{font-size:22px;letter-spacing:4px}
+    .offer-box{padding:42px 24px 40px}
+    .offer-title{font-size:22px}
+    .offer-stack li{font-size:14px;flex-wrap:wrap}
+    .offer-stack li .val{font-size:13px}
+    .offer-price-big{font-size:60px}
+    .offer-price-big small{font-size:22px}
+    .offer-price-big .cents{font-size:24px}
+    .testi-card{padding:28px 26px}
+    .testi-body{font-size:16px}
+    .seal-phrase{font-size:20px}
+    .garantia-card{padding:40px 26px}
+    .garantia-h{font-size:24px}
+    .garantia-p{font-size:16px}
+    .faq-q{font-size:16px;padding:20px 22px}
+    .faq-a p{font-size:16px;padding-left:22px;padding-right:22px}
+    .final-h{font-size:30px}
+    .final-text{font-size:16px}
+  }
+  @media (max-width:400px){
+    .hero h1{font-size:26px}
+    .offer-price-big{font-size:50px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ========================================================
+     STARFIELD (gerado por JS abaixo)
+======================================================== -->
+<div class="stars" id="stars"></div>
+
+
+<!-- ========================================================
+     BLOCO 1 — HERO
+======================================================== -->
+<section class="hero">
+  <div class="hero-eyebrow">Uma palavra para quem ainda espera</div>
+
+  <h1>Você Não Foi Feita para Esperar pelo Amor para Sempre.</h1>
+
+  <p class="hero-sub">
+    A razão pela qual o amor verdadeiro ainda não chegou na sua vida <em>não é falta de oração</em>. Não é castigo. <b>Você não é o problema.</b> Existe um conhecimento que ninguém te entregou — e quando ele chega, muda tudo.
+  </p>
+
+  <div class="hero-meta">
+    Acesso imediato e para sempre<span class="dot">·</span>7 dias de garantia<span class="dot">·</span>Pagamento único
+  </div>
+</section>
+
+
+<!-- ========================================================
+     HEART DIVIDER (entre hero e dor)
+======================================================== -->
+<div class="heart-divider">
+  <img src="img/selo-coracao-cera2.png" alt="" class="heart-divider-img" onerror="this.style.display='none'">
+</div>
+
+
+<!-- ========================================================
+     BLOCO 2 — A DOR PROFUNDA
+     (voz Recados Sagrados — cristã PT-BR autêntica)
+======================================================== -->
+<section class="block dor">
+  <div class="block-inner">
+    <p class="ask"><strong>Posso te perguntar uma coisa? E preciso que você responda com a verdade — pelo menos pra você mesma.</strong></p>
+
+    <div class="dor-text">
+      <p>Faz quanto tempo que você espera por um amor verdadeiro?</p>
+
+      <p>Cinco anos? Dez? Quinze? Talvez você já tenha parado de contar, porque contar dói.</p>
+
+      <p>Você fez <b>tudo certo</b>. Não saiu da igreja. Não cedeu pro errado. Levou o jejum a sério. Pediu intercessão. Buscou aconselhamento pastoral. Conversou com mulher mais velha que você admira. Buscou terapia também, porque sabia que tinha coisa antiga pra resolver. Entregou nas mãos de Deus mais vezes do que consegue lembrar.</p>
+
+      <p>E ainda assim, hoje, você dorme sozinha.</p>
+
+      <p>Você vê amigas casarem. Vê primas mais novas anunciarem gravidez. Vai pra festa de aniversário de filho dos outros e volta pra casa em silêncio.</p>
+
+      <p>E numa festa de família qualquer — um aniversário de parente, um almoço de domingo — você ouve, mais uma vez, a pergunta que te machuca por dentro: <i>"e o seu casamento?"</i> — e mesmo assim você responde sorrindo.</p>
+
+      <p>E em algum lugar do silêncio — quando ninguém tá olhando, na madrugada, quando até a fé parece cansada — vem aquela pergunta antiga, a que você nunca diz em voz alta:</p>
+    </div>
+
+    <p class="dor-quote">"Será que eu nunca vou encontrar um amor verdadeiro? O que estou fazendo de errado?"</p>
+
+    <div class="dor-close">
+      <p>Se você sentiu alguma coisa lendo isso — um aperto no peito, uma lágrima querendo descer, um silencioso <i>"sim, isso é comigo"</i> — então o que vem agora foi escrito pra você.</p>
+
+      <strong>Deus não te esqueceu.</strong>
+      <strong>Mas existe uma coisa MUITO IMPORTANTE que ninguém te ensinou.</strong>
+
+      <div class="cta-wrap" style="margin-top:38px">
+        <a href="#oferta" class="cta-btn cta-btn-soft">Quero descobrir o que é &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================================
+     TEASER VISUAL
+======================================================== -->
+<section class="teaser-visual">
+  <div class="teaser-img"></div>
+</section>
+
+
+<!-- ========================================================
+     BLOCO 3 — MECANISMO (sem entregar)
+     Revela 3 dos 7 sinais
+======================================================== -->
+<section class="mec">
+  <div class="block-inner">
+    <div class="eyebrow block-eyebrow">A verdade que ninguém te contou</div>
+    <h2 class="section-h">Você não precisa <em>de mais espera</em>.<br>Você precisa <em>aprender a reconhecer</em>.</h2>
+
+    <div class="impact-card">
+      <p>Existe uma razão real pela qual algumas mulheres encontram o amor verdadeiro — enquanto outras, <em>igualmente fiéis, igualmente devotas, igualmente boas</em>, atravessam 10, 15, 20 anos sem reconhecer quando ele apareceu na frente delas.</p>
+      <p>Não é castigo. Não é falta de mérito. Não é <em>"o tempo de Deus"</em> do jeito que muita gente te explicou.</p>
+      <p class="impact-final">São <span class="big-seven">7</span> sinais.</p>
+    </div>
+
+    <p class="mec-bridge">
+      São <b>7 marcas</b> que aparecem na história de Rute, Sara, Ana, Maria — e em qualquer mulher esperada por Deus. Sete coisas que a Bíblia escreveu com clareza, mas que a maioria das mulheres atravessou a vida inteira sem aprender a ler como sinal.
+    </p>
+
+    <p class="mec-bridge" style="margin-top:-30px">
+      A maioria confunde <i>uma atração intensa pelo homem errado</i> com sinal de Deus — e descarta o homem certo achando que é só mais um qualquer. <b>Você não tem um problema de espera. Você tem um problema de reconhecimento.</b>
+    </p>
+
+    <div class="sinais">
+
+      <div class="sinal-card">
+        <div class="sinal-num-label">Sinal Um</div>
+        <h3 class="sinal-title">A paz que se instala antes do encanto</h3>
+        <p class="sinal-body">Você senta com ele pra conversar — e o seu corpo <b>desacelera</b>. Não precisa performar. Não precisa monitorar a respiração. Não precisa se editar pra caber. Pela primeira vez, em muito tempo, você simplesmente <b>está</b>. A maioria das mulheres descarta esse sinal porque confunde paz com falta de interesse.</p>
+        <div class="sinal-ref">Rute reconheceu Boaz por essa paz. Não houve fogo. Houve proteção paciente.</div>
+      </div>
+
+      <div class="sinal-card">
+        <div class="sinal-num-label">Sinal Três</div>
+        <h3 class="sinal-title">A reverência pelo seu coração de fé</h3>
+        <p class="sinal-body">Ele não te <b>tira</b> do que você tem com Deus. Não te <b>empurra</b> rápido demais. Te <b>lembra de Deus</b> em vez de competir com Ele. Esse sinal separa o homem que sabe falar a língua da igreja do homem que tem reverência verdadeira — e a diferença muda o destino de uma vida.</p>
+        <div class="sinal-ref">Boaz protegeu a honra de Rute antes mesmo de fazer promessa de futuro.</div>
+      </div>
+
+      <div class="sinal-card">
+        <div class="sinal-num-label">Sinal Cinco</div>
+        <h3 class="sinal-title">A presença que se mantém na ausência</h3>
+        <p class="sinal-body">Ele viaja, fica num projeto, cuida de uma emergência da família. E você não entra em pânico. Não sente que ele esfriou. Você sente, no peito, que ele continua <b>firme dentro de você</b> — e que vai voltar quando o tempo passar. Esse sinal é o que sustenta um casamento por décadas.</p>
+        <div class="sinal-ref">Elcana sentado ao lado da dor de Ana. Presença firme é o que sustenta a mulher dele.</div>
+      </div>
+
+    </div>
+
+    <div class="reveal-rest">
+      <div class="num">+ Quatro</div>
+      <p>E mais <b>quatro sinais</b> que pertencem apenas a quem entra no Código. Os que respondem à pergunta que você fazia em silêncio: <strong><em>"como eu vou saber quando ele chegar?"</em></strong></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================================
+     STRIP DIVIDER
+======================================================== -->
+<div class="strip-divider">
+  <p>Isso não é mais um livro que te manda esperar e confiar<span class="dot">·</span><strong>Isso é um guia que te ensinará a reconhecer e encontrar o amor da sua vida</strong></p>
+</div>
+
+
+<!-- ========================================================
+     BLOCO 4 — PRODUTO + PRIMEIRO CTA
+======================================================== -->
+<section class="produto" id="conhecer">
+  <div class="produto-card">
+    <div class="produto-intro">Apresentando</div>
+
+    <h2 class="produto-h">O Código do Amor Divino</h2>
+    <p class="produto-subh">Para a mulher que CANSOU de esperar e está pronta para reconhecer seu futuro marido.</p>
+
+    <p class="produto-desc">
+      Um guia completo em <b>5 capítulos</b> que te leva da ferida invisível até o reconhecimento do amor verdadeiro que Deus separou pra você. Acompanhado de um <b>Caminho de 90 dias com áudio narrado</b> — pra você ouvir onde e quando quiser.
+    </p>
+
+    <div class="what-inside">Dentro dos cinco capítulos</div>
+
+    <div class="capitulos">
+      <div class="cap-item">
+        <div class="cap-num">Capítulo Um</div>
+        <div class="cap-title">As cinco feridas invisíveis que mantêm o amor distante</div>
+      </div>
+      <div class="cap-item">
+        <div class="cap-num">Capítulo Dois</div>
+        <div class="cap-title">A mulher que Deus vê — antes do mundo enxergar</div>
+      </div>
+      <div class="cap-item">
+        <div class="cap-num">Capítulo Três</div>
+        <div class="cap-title">Os sete sinais do amor verdadeiro</div>
+      </div>
+      <div class="cap-item">
+        <div class="cap-num">Capítulo Quatro</div>
+        <div class="cap-title">Como Deus afasta o errado — e por que parece rejeição</div>
+      </div>
+      <div class="cap-item">
+        <div class="cap-num">Capítulo Cinco</div>
+        <div class="cap-title">A mulher pronta — quando o tempo se cumpre</div>
+      </div>
+    </div>
+
+    <div class="cta-wrap">
+      <a href="#oferta" class="cta-btn">Quero o Código agora &rarr;</a>
+      <div class="cta-sub">Acesso vitalício<span>·</span>7 dias de garantia<span>·</span>Pagamento único</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================================
+     BLOCO 5 — BÔNUS
+======================================================== -->
+<section class="bonus">
+  <div class="block-inner">
+    <div class="eyebrow block-eyebrow">Mas isso não é tudo</div>
+
+    <div class="bonus-intro">
+      <h2 class="bonus-title-num"><em>4 Bônus</em> que completam o caminho</h2>
+    </div>
+
+    <div class="bonus-grid">
+
+      <div class="bonus-card">
+        <div class="bonus-cover-thumb" data-num="I">
+          <img src="img/bonus-1.jpg" alt="" onerror="this.style.display='none'">
+        </div>
+        <div class="bonus-content">
+          <h3 class="bonus-card-title">O Que Deus Faz Enquanto Você Espera</h3>
+          <p class="bonus-card-promise">Você está esperando há anos sem nenhum direcionamento prático. Esse diário muda isso. <b>21 dias</b> que transformarão a espera em preparação real — pra você não chegar despreparada quando o amor verdadeiro finalmente bater na sua porta nem confundir o que vem de Deus.</p>
+          <div class="bonus-card-value">Valor <span>R$ 47</span></div>
+        </div>
+      </div>
+
+      <div class="bonus-card">
+        <div class="bonus-cover-thumb" data-num="II">
+          <img src="img/bonus-2.jpg" alt="" onerror="this.style.display='none'">
+        </div>
+        <div class="bonus-content">
+          <h3 class="bonus-card-title">É Ele ou É Tentação?</h3>
+          <p class="bonus-card-promise">Quantas vezes você já achou que era "ele" e se desiludiu depois? <b>Existe uma pergunta espiritual única</b> que separa o que vem de Deus do que parece resposta mas é tentação disfarçada. Você aprende a usar essa pergunta logo nas primeiras conversas — e nunca mais erra do mesmo jeito.</p>
+          <div class="bonus-card-value">Valor <span>R$ 47</span></div>
+        </div>
+      </div>
+
+      <div class="bonus-card">
+        <div class="bonus-cover-thumb" data-num="III">
+          <img src="img/bonus-3.jpg" alt="" onerror="this.style.display='none'">
+        </div>
+        <div class="bonus-content">
+          <h3 class="bonus-card-title">Antes de Te Conhecer</h3>
+          <p class="bonus-card-promise">Existem palavras que você carrega no peito há anos e nunca conseguiu dizer em voz alta — nem em oração. <b>Essa prática te leva a escrever uma carta selada</b> pro homem que ainda vai chegar. E quando você termina, descobre sobre você mesma o que muda a sua espera pra sempre.</p>
+          <div class="bonus-card-value">Valor <span>R$ 47</span></div>
+        </div>
+      </div>
+
+      <div class="bonus-card">
+        <div class="bonus-cover-thumb" data-num="IV">
+          <img src="img/bonus-4.jpg" alt="" onerror="this.style.display='none'">
+        </div>
+        <div class="bonus-content">
+          <h3 class="bonus-card-title">Você Não Está Sozinha</h3>
+          <p class="bonus-card-promise">Você não está sozinha. <b>Sete mulheres da Bíblia esperaram exatamente como você espera hoje</b> — e o céu honrou cada uma delas de um jeito diferente. Você descobre em qual das sete você se encontra agora — e qual é o caminho específico de Deus pra você.</p>
+          <div class="bonus-card-value">Valor <span>R$ 56</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bonus-total">
+      <p>Valor total dos bônus: <strong>R$ 197,00</strong></p>
+      <div class="bonus-total-highlight">Todos inclusos &mdash; <strong>sem pagar a mais</strong> &mdash; É seu para sempre.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================================
+     GATILHO DE CURIOSIDADE (whisper)
+======================================================== -->
+<section class="whisper">
+  <p>
+    "Muitas mulheres estão lendo esse guia e tendo uma sensação estranha — como se estivessem reconhecendo verdades que sempre souberam por dentro, mas nunca tinham conseguido nomear."
+  </p>
+</section>
+
+
+<!-- ========================================================
+     BLOCO 6 — OFERTA + COUNTDOWN
+======================================================== -->
+<section class="offer" id="oferta">
+  <div class="block-inner">
+    <div class="offer-eyebrow">Tudo o que você recebe hoje</div>
+    <h2 class="offer-h">Você leva <em>tudo isso</em> hoje por apenas:</h2>
+
+    <div class="offer-box">
+      <div class="offer-special">Oferta de lançamento</div>
+
+      <h3 class="offer-title">O Código do Amor Divino &mdash; Pacote completo</h3>
+
+      <ul class="offer-stack">
+        <li>
+          <span>O Código do Amor Divino &mdash; livro completo</span>
+          <span class="val">R$ 67</span>
+        </li>
+        <li>
+          <span>Caminho de 90 Dias com áudio narrado</span>
+          <span class="val">R$ 67</span>
+        </li>
+        <li class="bonus-line">
+          <span>+ Bônus I &mdash; O Que Deus Faz Enquanto Você Espera</span>
+          <span class="val">R$ 47</span>
+        </li>
+        <li class="bonus-line">
+          <span>+ Bônus II &mdash; É Ele ou É Tentação?</span>
+          <span class="val">R$ 47</span>
+        </li>
+        <li class="bonus-line">
+          <span>+ Bônus III &mdash; Antes de Te Conhecer</span>
+          <span class="val">R$ 47</span>
+        </li>
+        <li class="bonus-line">
+          <span>+ Bônus IV &mdash; Você Não Está Sozinha</span>
+          <span class="val">R$ 56</span>
+        </li>
+      </ul>
+
+      <div class="offer-divider"></div>
+
+      <div class="offer-total">
+        Valor total<span class="val">R$ 331</span>
+      </div>
+
+      <div class="offer-price-label">Hoje, no lançamento</div>
+      <div class="offer-price-big"><small>R$</small>37<span class="cents">,90</span></div>
+      <div class="offer-price-sub">Pagamento único &middot; Sem mensalidade &middot; Sem renovação</div>
+
+      <a href="https://pay.hotmart.com/S105974412C?off=jshqmhui&checkoutMode=10" class="cta-btn">Sim &mdash; quero abrir o Código agora &rarr;</a>
+
+      <div class="offer-secure">
+        🔒 Compra segura<span>·</span>Acesso imediato<span>·</span>7 dias de garantia
+      </div>
+    </div>
+
+    <!-- Countdown — abaixo da caixa de oferta -->
+    <div class="countdown-strip">
+      <div class="countdown-label">Preço de lançamento acaba em</div>
+      <div class="countdown-clock" id="countdown">00:00:00</div>
+      <div class="countdown-after">depois volta a <b>R$ 331</b></div>
+    </div>
+
+    <!-- Caminho 90 dias — destaque após a oferta -->
+    <div class="caminho-slim">
+      <div class="caminho-slim-num">+ 90 dias</div>
+      <div class="caminho-slim-text">
+        Um conteúdo diário <strong>especial</strong> pra te acompanhar nessa caminhada que muitas vezes é solitária demais. <strong>Tudo narrado em áudio.</strong> Você não precisa caminhar sozinha.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================================
+     BLOCO 7 — CTA REFORÇO
+======================================================== -->
+<section class="cta-reforco">
+  <p>Você já leu o que precisava ler pra decidir.<br>O que vem agora ou confirma, ou faz você adiar mais uma semana.</p>
+  <div class="cta-wrap">
+    <a href="#oferta" class="cta-btn">Quero começar agora &rarr;</a>
+    <div class="cta-sub">Acesso imediato<span>·</span>7 dias de garantia</div>
+  </div>
+</section>
+
+
+<!-- ========================================================
+     BLOCO 8 — TESTIMONIALS
+======================================================== -->
+<section class="testi">
+  <div class="block-inner">
+    <div class="eyebrow block-eyebrow">Mulheres que abriram o Código</div>
+    <h2 class="section-h">E tudo mudou <em>de dentro pra fora</em></h2>
+  </div>
+
+  <div class="testi-grid">
+
+    <div class="testi-card">
+      <p class="testi-body">
+        Eu vinha esperando há onze anos. <b>O capítulo das cinco feridas</b> me fez chorar uma tarde inteira — eu carregava aquilo há décadas sem nome. Hoje eu sei o que carrego. E isso, sozinho, já mudou como eu trato o homem que me procura. <em>Esse livro chegou pra mim no momento exato.</em>
+      </p>
+      <div class="testi-meta">
+        <div class="testi-avatar">
+          <img src="img/depoimento-1-marcela.jpg" alt="" onerror="this.style.display='none'">M
+        </div>
+        <div class="testi-info">
+          <div class="testi-name">Marcela L.</div>
+          <div class="testi-where">42 anos &middot; Belo Horizonte, MG</div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <p class="testi-body">
+        Comecei <b>o Caminho de noventa dias</b> achando que ia esquecer no terceiro. Estou no dia setenta e dois. As manhãs ficaram diferentes — eu não imaginava que ouvir uma palavra ia me sustentar tanto. Hoje eu abro o áudio antes de tudo. É a primeira voz que eu ouço no dia.
+      </p>
+      <div class="testi-meta">
+        <div class="testi-avatar">
+          <img src="img/depoimento-2-roseli.jpg" alt="" onerror="this.style.display='none'">R
+        </div>
+        <div class="testi-info">
+          <div class="testi-name">Roseli T.</div>
+          <div class="testi-where">56 anos &middot; Curitiba, PR</div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <p class="testi-body">
+        <b>O terceiro sinal</b> me poupou de continuar um namoro que tava me afastando da igreja. Eu via, mas justificava. Depois de ler o capítulo, parei de justificar. Não sei se vou encontrar o amor verdadeiro amanhã, mas sei que não vou mais aceitar o que eu vinha aceitando. Já é virada.
+      </p>
+      <div class="testi-meta">
+        <div class="testi-avatar">
+          <img src="img/depoimento-3-joana.jpg" alt="" onerror="this.style.display='none'">J
+        </div>
+        <div class="testi-info">
+          <div class="testi-name">Joana M.</div>
+          <div class="testi-where">38 anos &middot; Recife, PE</div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <p class="testi-body">
+        <b>Antes de Te Conhecer</b> foi o bônus que mais me marcou. Não é truque. É uma prática que arrancou de dentro de mim coisas que eu nunca tinha conseguido falar — nem em oração. Escrevi e selei. Sinto que alguma coisa se moveu por dentro. <em>Não consigo explicar. Só sentir.</em>
+      </p>
+      <div class="testi-meta">
+        <div class="testi-avatar">
+          <img src="img/depoimento-4-amelia.jpg" alt="" onerror="this.style.display='none'">A
+        </div>
+        <div class="testi-info">
+          <div class="testi-name">Amélia P.</div>
+          <div class="testi-where">49 anos &middot; Goiânia, GO</div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <p class="testi-body">
+        Comprei cético. Pra ser honesto, achei que era conteúdo só pra mulher — comprei mais pra minha irmã parar de insistir do que por interesse próprio. Li o capítulo das <b>cinco feridas invisíveis</b> em uma noite e fiquei acordado até as três da manhã. Eu não tinha ideia de quanta coisa eu vinha carregando sem nome. Faz dois meses que parei de procurar a mesma pessoa que me consumiu por oito anos. O telefone dela toca, eu não atendo mais. <em>Funciona pra homem também.</em>
+      </p>
+      <div class="testi-meta">
+        <div class="testi-avatar">
+          <img src="img/depoimento-5-carlos.jpg" alt="" onerror="this.style.display='none'">C
+        </div>
+        <div class="testi-info">
+          <div class="testi-name">Carlos R.</div>
+          <div class="testi-where">51 anos &middot; São Paulo, SP</div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ========================================================
+     BLOCO 9 — SEAL DIVIDER (imagem custom)
+======================================================== -->
+<section class="seal-divider">
+  <div class="seal-img-wrap">
+    <img src="img/04-seal-casal.jpg" alt="" class="seal-custom"
+         onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='block';">
+    <div class="seal-placeholder">[ Imagem: silhueta de casal maduro abraçados — OU livro lindo com coração na capa ]</div>
+  </div>
+  <p class="seal-phrase">"Antes de você nascer, o seu nome já estava escrito no livro do amor."</p>
+</section>
+
+
+<!-- ========================================================
+     BLOCO 10 — GARANTIA
+======================================================== -->
+<section class="garantia">
+  <div class="garantia-card">
+    <div class="garantia-shield">
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+        <path d="M30 4 L8 12 L8 28 C 8 42, 18 52, 30 56 C 42 52, 52 42, 52 28 L52 12 Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <path d="M22 30 L28 36 L40 22" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="garantia-eyebrow">Garantia de 7 dias</div>
+    <h3 class="garantia-h">Leia o livro. Comece o Caminho.<br>Abra os bônus.</h3>
+    <p class="garantia-p">
+      Se em 7 dias o Código não tiver tocado no que você esperava, <strong>basta um email pedindo o reembolso integral.</strong> Sem perguntas. Sem julgamento. Sem precisar justificar nada.
+    </p>
+    <p class="garantia-final">
+      O seu único risco é continuar exatamente onde está.
+    </p>
+  </div>
+</section>
+
+
+<!-- ========================================================
+     BLOCO 11 — FAQ
+======================================================== -->
+<section class="faq-block">
+  <div class="block-inner">
+    <div class="eyebrow block-eyebrow">Dúvidas que você pode ter</div>
+    <h2 class="section-h">Antes de você decidir</h2>
+  </div>
+
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">É um livro físico ou digital?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Digital. Você lê em qualquer dispositivo &mdash; celular, tablet, computador. Acesso imediato no momento em que o pagamento é confirmado pelo Hotmart. Sem espera de entrega. Sem frete.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">Sou católica. Funciona pra mim?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Funciona. A linguagem é cristã, bíblica e foi cuidada pra honrar a Bíblia sem dividir a leitora. As histórias usadas &mdash; Sara, Rute, Ana, Ester, Maria &mdash; pertencem às duas tradições. Mulheres católicas e evangélicas estão lendo e se reconhecendo nas mesmas páginas.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">Sou evangélica. Tem algo só pra católica?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Não. Nenhuma prática, oração ou conceito que separe as duas igrejas. O Código foi escrito como leitura cristã universal &mdash; o vocabulário é o da Bíblia, não o de uma denominação só.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">Sou solteira / divorciada / viúva. Vale pra mim?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Vale pras três. O Código foi escrito pensando no caminho espiritual, não no estado civil. A dor da espera tem nomes diferentes &mdash; mas o caminho é o mesmo. Mulher solteira de quarenta, divorciada de cinquenta e viúva de sessenta se reconhecem nas mesmas páginas.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">Tenho mais de cinquenta. Ainda vale?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Vale principalmente pra você. O Código fala sobre <em>o tempo de Deus que não é o tempo do mundo</em> &mdash; e várias mulheres entre cinquenta e sessenta anos estão nos contando que essa leitura chegou na hora certa, depois de décadas de espera. Idade não é obstáculo. É preparação.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">Isso substitui terapia ou acompanhamento pastoral?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Não. O Código é um guia espiritual que fortalece &mdash; mas não substitui terapia, aconselhamento pastoral, nem tratamento médico. Se você está em tratamento, segue o tratamento e lê o Código junto. Os dois caminhos se completam, não se anulam.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">É assinatura?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Não. Pagamento único. Você paga uma vez. O acesso é seu pra sempre. Sem mensalidade, sem renovação, sem cobrança surpresa.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">E a garantia de 7 dias é real?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Completamente real. Um email. Reembolso integral. Sem precisar passar por nada. Se em 7 dias o Código não te tocar, você não paga por ele.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">Como funcionam os bônus?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Os bônus são liberados <strong>7 dias após a data da compra</strong>. Esse intervalo é proposital: os bônus aprofundam temas que o livro principal introduz, e a leitura dos 5 capítulos centrais precisa fazer sentido primeiro pra que cada bônus toque no que precisa tocar. <em>É o tempo certo pro que você aprende no Código começar a entrar no seu coração</em> &mdash; antes de abrir as camadas mais íntimas. Lendo na ordem, o efeito é o que precisa ser.</p></div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ========================================================
+     BLOCO 12 — FINAL CTA
+======================================================== -->
+<section class="final">
+  <div class="final-eyebrow">Você esperou tempo demais</div>
+
+  <h2 class="final-h">A espera não acaba quando o amor chega.<br>Acaba quando você <em>aprende a reconhecer.</em></h2>
+
+  <div class="final-heart">
+    <img src="img/selo-coracao-cera2.png" alt="Selo de coração" onerror="this.style.display='none'">
+  </div>
+
+  <div class="final-text">
+    <p>Você pode fechar essa página e continuar esperando. <em>Continuar voltando pras mesmas orações. Continuar acordando de madrugada com a mesma pergunta presa na garganta.</em></p>
+    <p>Ou você pode escolher &mdash; <strong>agora</strong> &mdash; fazer diferente.</p>
+    <p>Não mais espera passiva. Não mais confundir uma atração intensa pelo homem errado com sinal de Deus. Não mais deixar passar o certo achando que era só mais um qualquer.</p>
+    <p><strong>Reconhecimento.</strong></p>
+    <p>O amor verdadeiro que Deus separou pra você não é fantasia. Ele é real. E os sete sinais que vão te ajudar a vê-lo estão dentro do Código.</p>
+  </div>
+
+  <div class="cta-wrap">
+    <a href="#oferta" class="cta-btn">Quero abrir o Código &mdash; R$ 37,90 &rarr;</a>
+    <div class="cta-sub">🔒 Compra segura<span>·</span>Acesso imediato<span>·</span>7 dias de garantia</div>
+  </div>
+
+  <div class="final-tag">
+    <p>O amor que Deus separou já te conhece.</p>
+    <p>Falta você reconhecer ele.</p>
+  </div>
+</section>
+
+
+<!-- ========================================================
+     FOOTER
+======================================================== -->
+<footer>
+  <div class="ft-mark">Recados Sagrados</div>
+  <div class="ft-line"></div>
+  <p>O Código do Amor Divino &middot; Edição digital &middot; 2026</p>
+  <p>Suporte: <a href="mailto:ainspiracaodivina@gmail.com">ainspiracaodivina@gmail.com</a></p>
+  <p class="disclaimer">Este produto não substitui acompanhamento médico, psicológico ou pastoral.</p>
+</footer>
+
+
+<script>
+  /* ============= STARFIELD: pontinhos piscando ============= */
+  (function(){
+    const container = document.getElementById('stars');
+    if (!container) return;
+    const colors = ['#f0e4c4', '#d6b984', '#c9a24b', '#e8d8a0'];
+    const count = window.innerWidth < 720 ? 50 : 90;
+    for (let i = 0; i < count; i++) {
+      const star = document.createElement('span');
+      star.className = 'star';
+      const size = 1 + Math.random() * 1.5;
+      star.style.width = size + 'px';
+      star.style.height = size + 'px';
+      star.style.top = (Math.random() * 100) + 'vh';
+      star.style.left = (Math.random() * 100) + 'vw';
+      star.style.background = colors[Math.floor(Math.random() * colors.length)];
+      star.style.animationDuration = (2.5 + Math.random() * 4) + 's';
+      star.style.animationDelay = (Math.random() * 5) + 's';
+      star.style.boxShadow = '0 0 ' + (2 + Math.random() * 3) + 'px ' + star.style.background;
+      container.appendChild(star);
+    }
+  })();
+
+  /* ============= COUNTDOWN ============= */
+  (function(){
+    const KEY = 'codigo-amor-divino-deadline-v3';
+    let deadline = parseInt(localStorage.getItem(KEY) || '0', 10);
+    const now = Date.now();
+    if (!deadline || deadline < now) {
+      deadline = now + 24 * 60 * 60 * 1000;
+      localStorage.setItem(KEY, String(deadline));
+    }
+    const el = document.getElementById('countdown');
+    if (!el) return;
+    function pad(n){return String(n).padStart(2,'0')}
+    function tick(){
+      const diff = deadline - Date.now();
+      if (diff <= 0) { el.textContent = '00:00:00'; return; }
+      const h = Math.floor(diff / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      el.textContent = pad(h) + ':' + pad(m) + ':' + pad(s);
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+
+  /* ============= FAQ ============= */
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.parentElement.classList.toggle('open');
+    });
+  });
+
+  /* ============= SMOOTH SCROLL ============= */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const targetId = a.getAttribute('href');
+      if (targetId && targetId.length > 1) {
+        const target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
