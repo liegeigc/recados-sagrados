@@ -1646,5 +1646,151 @@
   });
 </script>
 
+
+<!-- ========================================================
+     EXIT POPUP MOBILE — JS inline
+     (Hotmart Custom Checkout não dispara popup em mobile,
+      então capturamos aqui na landing antes de ir pro checkout)
+======================================================== -->
+<div id="mobileExitPopup" class="mob-exit-popup" hidden>
+  <div class="mob-exit-overlay" data-close></div>
+  <div class="mob-exit-content">
+    <button type="button" class="mob-exit-close" data-close aria-label="Fechar">&times;</button>
+    <img src="img/popup-mulher.jpg" alt="" class="mob-exit-img" onerror="this.style.display='none'">
+    <div class="mob-exit-text">
+      <h3>Você sempre vai embora antes do amor chegar. Não dessa vez.</h3>
+      <p>Você chegou até aqui por um motivo — e agora está prestes a fechar a porta com a mão na maçaneta, como sempre fez. Esse preço, nessa página, fecha junto com você.</p>
+    </div>
+    <a href="https://pay.hotmart.com/S105974412C?off=zycrtmq1&checkoutMode=10" class="mob-exit-btn">
+      Sim &mdash; Abrir o Código por R$ 32,90 &rarr;
+    </a>
+  </div>
+</div>
+
+<style>
+  .mob-exit-popup{
+    position:fixed;inset:0;z-index:9999;
+    display:flex;align-items:center;justify-content:center;
+    padding:18px;
+  }
+  .mob-exit-popup[hidden]{display:none}
+  .mob-exit-overlay{
+    position:absolute;inset:0;
+    background:rgba(17,8,39,0.88);
+    backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);
+  }
+  .mob-exit-content{
+    position:relative;z-index:1;
+    background:#1a0e3e;color:#e8e5d8;
+    border:1px solid rgba(201,162,75,0.45);
+    border-radius:6px;
+    max-width:380px;width:100%;
+    text-align:center;
+    box-shadow:0 12px 40px rgba(0,0,0,0.55);
+    overflow:hidden;
+    animation:mobExitIn .28s ease-out;
+  }
+  @keyframes mobExitIn{
+    from{transform:translateY(24px);opacity:0}
+    to{transform:translateY(0);opacity:1}
+  }
+  .mob-exit-close{
+    position:absolute;top:10px;right:10px;z-index:2;
+    background:rgba(0,0,0,0.55);color:#fff;border:none;
+    width:34px;height:34px;border-radius:50%;
+    font-size:22px;line-height:1;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+    padding:0;
+  }
+  .mob-exit-img{
+    display:block;width:100%;height:auto;
+    max-height:300px;object-fit:cover;object-position:center top;
+  }
+  .mob-exit-text{padding:20px 22px 14px}
+  .mob-exit-text h3{
+    font-family:"Cinzel","Cormorant Garamond",serif;
+    font-style:italic;font-weight:500;
+    font-size:19px;line-height:1.25;
+    color:#c9a24b;letter-spacing:.2px;
+    margin:0 0 12px;
+  }
+  .mob-exit-text p{
+    font-family:"Cormorant Garamond",Georgia,serif;
+    font-size:15px;line-height:1.45;
+    color:#c5b8d6;font-style:italic;
+    margin:0;
+  }
+  .mob-exit-btn{
+    display:block;
+    margin:14px 22px 22px;
+    padding:16px 14px;
+    background:#c9a24b;color:#110827;
+    font-family:"Cinzel",serif;
+    font-size:12.5px;letter-spacing:1.8px;text-transform:uppercase;font-weight:500;
+    text-decoration:none;border-radius:3px;
+    box-shadow:0 0 0 1px #e3bb6b, 0 0 24px rgba(201,162,75,0.4);
+  }
+  /* DESKTOP: nunca mostra (popup é do Hotmart Custom Checkout) */
+  @media (min-width:769px){
+    .mob-exit-popup{display:none !important}
+  }
+</style>
+
+<script>
+(function(){
+  /* Mobile-only: sai se for desktop */
+  if (window.matchMedia('(min-width:769px)').matches) return;
+  /* Uma vez por sessão */
+  if (sessionStorage.getItem('rsExitMobShown') === '1') return;
+
+  var popup = document.getElementById('mobileExitPopup');
+  if (!popup) return;
+
+  var fired = false;
+  var lastY = window.scrollY || 0;
+  var deepestY = 0;
+
+  function open(){
+    if (fired) return;
+    fired = true;
+    sessionStorage.setItem('rsExitMobShown', '1');
+    popup.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function close(){
+    popup.hidden = true;
+    document.body.style.overflow = '';
+  }
+  popup.querySelectorAll('[data-close]').forEach(function(el){
+    el.addEventListener('click', close);
+  });
+
+  /* Trigger 1: 20s na página */
+  setTimeout(open, 20000);
+
+  /* Trigger 2: scroll-up depois de rolar >400px (intenção de sair) */
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY || 0;
+    if (y > deepestY) deepestY = y;
+    if (deepestY > 400 && y < lastY - 60) open();
+    lastY = y;
+  }, {passive:true});
+
+  /* Trigger 3: trocou de aba / minimizou */
+  document.addEventListener('visibilitychange', function(){
+    if (document.visibilityState === 'hidden') open();
+  });
+
+  /* Trigger 4: back button do mobile */
+  try { history.pushState({rsPopup:true}, ''); } catch(e){}
+  window.addEventListener('popstate', function(){
+    if (!fired) {
+      open();
+      try { history.pushState({rsPopup:true}, ''); } catch(e){}
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
