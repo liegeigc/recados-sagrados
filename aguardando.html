@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aguardando pagamento — O Código do Amor Divino</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --bg-deep:#110827;
+    --bg-soft:#15092d;
+    --bg-card:#1a0e3e;
+    --gold:#c9a24b;
+    --gold-bright:#e3bb6b;
+    --gold-soft:#d6b164;
+    --gold-dim:#8a6f30;
+    --cream:#e8e5d8;
+    --cream-dim:#b8b3a3;
+    --lavender:#a89bbf;
+    --lavender-bright:#c5b8d6;
+    --line:rgba(168,155,191,0.2);
+  }
+
+  html,body{
+    background:var(--bg-deep);
+    color:var(--cream);
+    font-family:"Cormorant Garamond",serif;
+    font-size:18px;line-height:1.65;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .page{
+    max-width:720px;margin:0 auto;
+    padding:80px 32px 80px;
+    text-align:center;
+    background:
+      radial-gradient(ellipse at top, rgba(201,162,75,0.08), transparent 60%),
+      var(--bg-deep);
+    min-height:100vh;
+    position:relative;
+  }
+
+  .star{
+    position:absolute;width:2px;height:2px;
+    background:rgba(232,229,216,0.4);border-radius:50%;
+    pointer-events:none;
+  }
+
+  /* Status icon (ampulheta animada) */
+  .status-icon{
+    width:90px;height:90px;margin:0 auto 28px;
+    border:2px solid var(--gold);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    color:var(--gold);font-size:42px;
+    background:rgba(201,162,75,0.04);
+    box-shadow:0 0 40px rgba(201,162,75,0.2);
+    animation:slowPulse 2.5s ease-in-out infinite;
+  }
+  @keyframes slowPulse{
+    0%,100%{box-shadow:0 0 40px rgba(201,162,75,0.2);transform:scale(1)}
+    50%{box-shadow:0 0 60px rgba(201,162,75,0.35);transform:scale(1.04)}
+  }
+
+  .eyebrow{
+    font-family:"Cinzel",serif;
+    font-size:11px;letter-spacing:5px;text-transform:uppercase;
+    color:var(--gold);font-weight:500;
+    margin-bottom:18px;
+  }
+
+  h1{
+    font-family:"Cinzel",serif;
+    font-style:italic;font-weight:500;
+    font-size:38px;line-height:1.2;
+    color:var(--gold);letter-spacing:.5px;
+    margin-bottom:18px;
+    max-width:580px;margin-left:auto;margin-right:auto;
+  }
+
+  .subtitle{
+    font-style:italic;font-size:21px;
+    color:var(--lavender-bright);
+    margin-bottom:38px;
+    max-width:540px;margin-left:auto;margin-right:auto;line-height:1.5;
+  }
+
+  .divider{
+    width:54px;height:1px;background:var(--gold);
+    margin:0 auto 36px;opacity:.6;
+  }
+
+  /* Status card */
+  .status-card{
+    background:rgba(201,162,75,0.04);
+    border:1px solid var(--line);
+    padding:34px 36px;
+    margin:0 auto 40px;
+    max-width:560px;
+    text-align:left;
+    border-radius:4px;
+  }
+  .status-card-title{
+    font-family:"Cinzel",serif;
+    font-size:12px;letter-spacing:3px;text-transform:uppercase;
+    color:var(--gold);font-weight:500;
+    margin-bottom:16px;text-align:center;
+  }
+  .status-card p{
+    font-size:17px;color:var(--cream-dim);line-height:1.7;
+    margin-bottom:14px;
+  }
+  .status-card p:last-child{margin-bottom:0}
+  .status-card strong{color:var(--cream);font-weight:500}
+  .status-card em{color:var(--lavender-bright);font-style:italic}
+
+  /* Próximos passos */
+  .next-box{
+    margin:0 auto 40px;
+    max-width:560px;
+    text-align:left;
+  }
+  .next-title{
+    font-family:"Cinzel",serif;
+    font-size:12px;letter-spacing:3px;text-transform:uppercase;
+    color:var(--gold);font-weight:500;
+    margin-bottom:20px;text-align:center;
+  }
+  .next-item{
+    display:flex;gap:14px;align-items:flex-start;
+    margin-bottom:16px;font-size:17px;
+    color:var(--cream-dim);line-height:1.6;
+  }
+  .next-item:last-child{margin-bottom:0}
+  .next-icon{
+    color:var(--gold);font-size:20px;flex-shrink:0;
+    line-height:1;margin-top:3px;
+  }
+  .next-item strong{color:var(--cream);font-weight:500}
+
+  /* Aviso amigável */
+  .reassure{
+    margin:0 auto 40px;
+    max-width:560px;
+    padding:24px 28px;
+    background:rgba(168,155,191,0.04);
+    border-left:2px solid var(--lavender);
+    border-radius:0 4px 4px 0;
+    text-align:left;
+  }
+  .reassure p{
+    font-size:16px;color:var(--cream-dim);line-height:1.7;
+    font-style:italic;
+  }
+  .reassure strong{color:var(--lavender-bright);font-weight:500;font-style:normal}
+
+  /* Suporte */
+  .support{
+    margin-top:40px;
+    padding-top:30px;
+    border-top:1px solid var(--line);
+    text-align:center;
+  }
+  .support-label{
+    font-family:"Cinzel",serif;
+    font-size:11px;letter-spacing:3px;text-transform:uppercase;
+    color:var(--lavender);margin-bottom:10px;
+  }
+  .support-email{
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;font-size:18px;
+    color:var(--gold);
+  }
+  .support-email a{color:var(--gold);text-decoration:none}
+  .support-detail{
+    margin-top:14px;
+    font-size:15px;color:var(--cream-dim);
+    font-style:italic;
+    max-width:480px;margin-left:auto;margin-right:auto;line-height:1.5;
+  }
+
+  .signature{
+    margin-top:36px;
+    font-family:"Cinzel",serif;
+    font-size:12px;letter-spacing:4px;text-transform:uppercase;
+    color:var(--gold);
+  }
+
+  @media (max-width:680px){
+    .page{padding:56px 22px}
+    h1{font-size:30px}
+    .subtitle{font-size:18px}
+    .status-card{padding:24px 22px}
+    .status-card p{font-size:15.5px}
+    .next-item{font-size:15.5px}
+    .reassure{padding:18px 20px}
+    .reassure p{font-size:15px}
+    .status-icon{width:78px;height:78px;font-size:36px}
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div id="starfield"></div>
+
+  <!-- ÍCONE DE STATUS -->
+  <div class="status-icon">⧖</div>
+
+  <!-- HEADER -->
+  <div class="eyebrow">Aguardando pagamento</div>
+  <h1>Seu pedido está reservado.</h1>
+  <p class="subtitle">Estamos só esperando a confirmação do seu pagamento pra liberar o acesso.</p>
+
+  <div class="divider"></div>
+
+  <!-- STATUS CARD -->
+  <div class="status-card">
+    <div class="status-card-title">O que está acontecendo</div>
+    <p>Seu pedido d'<strong>O Código do Amor Divino</strong> foi registrado com sucesso. Estamos aguardando a <strong>confirmação do pagamento</strong> pela Hotmart pra liberar todo o seu acesso.</p>
+    <p><em>Pix:</em> confirmação em até <strong>2 minutos</strong> após o pagamento.<br>
+       <em>Boleto:</em> confirmação em até <strong>3 dias úteis</strong> após o pagamento.</p>
+  </div>
+
+  <!-- PRÓXIMOS PASSOS -->
+  <div class="next-box">
+    <div class="next-title">O que acontece quando o pagamento confirmar</div>
+
+    <div class="next-item">
+      <span class="next-icon">✦</span>
+      <div><strong>Email de boas-vindas</strong> chega automaticamente no seu endereço, com o PDF e o link de acesso.</div>
+    </div>
+
+    <div class="next-item">
+      <span class="next-icon">✦</span>
+      <div><strong>Acesso imediato e para sempre</strong> ao guia principal e ao Caminho de 90 dias.</div>
+    </div>
+
+    <div class="next-item">
+      <span class="next-icon">✦</span>
+      <div><strong>Os 4 bônus</strong> são liberados 7 dias depois — você é avisada por email.</div>
+    </div>
+  </div>
+
+  <!-- AVISO AMIGÁVEL -->
+  <div class="reassure">
+    <p>Você não precisa fazer nada agora. Assim que o pagamento confirmar, <strong>tudo chega no seu email</strong> sem você precisar voltar aqui. Se passar do prazo e ainda não tiver chegado, dá um toque no nosso suporte abaixo.</p>
+  </div>
+
+  <!-- SUPORTE -->
+  <div class="support">
+    <div class="support-label">Dúvida ou problema?</div>
+    <div class="support-email">
+      <a href="mailto:ainspiracaodivina@gmail.com">ainspiracaodivina@gmail.com</a>
+    </div>
+    <p class="support-detail">Se você pagou e o acesso não chegou no prazo, manda um email com o seu nome completo e o email da compra que a gente resolve.</p>
+  </div>
+
+  <div class="signature">Recados Sagrados</div>
+
+</div>
+
+<script>
+  (function(){
+    const sf = document.getElementById('starfield');
+    if(!sf) return;
+    for(let i=0;i<35;i++){
+      const s = document.createElement('div');
+      s.className = 'star';
+      s.style.left = Math.random()*100 + '%';
+      s.style.top = Math.random()*100 + '%';
+      s.style.opacity = (Math.random()*0.5 + 0.2).toFixed(2);
+      s.style.width = (Math.random()*2 + 1).toFixed(1) + 'px';
+      s.style.height = s.style.width;
+      sf.appendChild(s);
+    }
+  })();
+</script>
+
+</body>
+</html>
